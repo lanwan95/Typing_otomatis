@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Text Animation</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 200px;
+        }
+        
+        .container h2 {
+            background-color: #333;
+            padding: 5px 10px;
+            border-radius: 7px;
+            color: #eee;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>I'm Ayub Situmeag Say, <span class="typing-text"></span></h2>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed('.typing-text', {
+            strings: ["Cinta adalah anugerah terindah yang Tuhan berikan kepada manusia. Ya bisa dibilang cinta adalah alasan kamu untuk hidup, berjuang, dan berbahagia. Meski begitu, cinta merupakan sesuatu yang tak bisa diukur, tapi bisa dirasakan. Salah satu cara menunjukkan rasa cinta kepada istri adalah dengan mengungkapkan kata-kata cinta yang menyentuh hati.", "Di matamu, aku menemukan dunia yang indah, tempat di mana hatiku merasa benar-benar berada. Kamu adalah rumahku, sayang.", "Cinta kita seperti matahari yang tak pernah redup. Meskipun hujan turun atau badai melanda, cinta kita tetap bersinar terang.", "Istriku, kamu adalah bintang yang menyinari kehidupanku. Aku bersyukur memilikimu sebagai pendamping sejati.", "Aku ingin menghabiskan sisa waktu hidupku hanya bersama dirimu karena aku tahu ada di sampingmu adalah kebahagiaan yang besar untukku."],
+            typeSpeed: 100,
+            loop: true,
+            showCursor: true,
+            cursorChar: '|',
+            startDelay: 1000,
+            fadeOut: true,
+        });
+    </script>
+</body>
+
+</html>
